@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Guessing Game</title>
+        <!-- Bootstrap and CSS here-->
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'> -->
+        <script src="custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="total-container">
+
+            <div class='project-title'>
+                <h4>Project by <span class="highlight h-small">Daniel Castillo</span></h4>
+            </div>
+
+
+            <div id="app" class="app-container">
+
+
+                <div id="headers" class="app-header main-flex">
+                    <!-- Title and subtitles! -->
+                    <div class="heading-container">
+                        <h1>Guessing Game!</h1>
+                        <h2><span class="highlight">Guess</span> a number between 1-100.</h2>
+                    </div>
+                </div>
+
+                <div id='main' class="app-main main-flex">
+                    <div class="game-container">
+                        <div id='input-parent' class="input-container">
+                            <!-- Player's guess input, and submit button -->
+                            <input id="player-input" class="app-input" placeholder="#" maxlength='3' autofocus=autofocus></input>
+                            <button id="submit" class="button">Go!</button>
+                        </div>
+
+                        <div id='guesses' class="app-guess-container">
+                            <ul class="app-guesses">
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                            </ul>
+                        </div>
+
+                        <div id="menu-btns" class="app-menu-container">
+                            <!-- reset and hint buttons -->
+                            <button id="reset" class="button">Reset</button>
+                            <button id="hint" class="button">Hint</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id='footer' class="app-footer-container">
+                <div class="app-footer">
+
+                    <div class='logo fs'>
+                    </div>
+
+                    <div class='logo gh'>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
