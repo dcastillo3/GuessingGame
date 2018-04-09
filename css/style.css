@@ -4,7 +4,7 @@
 html {
     font-family: 'Open Sans';
     color: #fff;
-    background: url(bggradient.png) no-repeat;
+    background: url(../image/bggradient.png) no-repeat;
     background-size: cover;
 }
 
@@ -264,14 +264,14 @@ span.h-small {
 }
 
 .logo.fs {
-    background: url(fa-logo@2x.png) no-repeat;
+    background: url(../image/fa-logo@2x.png) no-repeat;
     background-size: contain;
     margin-left: 6vw;
     background-position: center;
 }
 
 .logo.gh {
-    background: url(grace_hopper_academy.png) no-repeat;
+    background: url(../image/grace_hopper_academy.png) no-repeat;
     background-size: contain;
     margin-right: 6vw;
     background-position: center;
