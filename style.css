@@ -24,6 +24,35 @@ body {
     word-spacing: .2em;
 }
 
+.project-title .desktop-author {
+    display: block;
+}
+
+.project-title .mobile-author {
+    display: none;
+}
+
+.app-menu-container {
+    position: absolute;
+    right: 6vw;
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .2em;
+    word-spacing: .2em;
+    top: 12px;
+}
+
+.app-menu-container .button {
+    padding: 3px 10px;
+    border-radius: unset;
+    background: none;
+}
+
+.submit-container .button {
+    width: 100%;
+}
+
 .total-container {
     display: flex;
     flex-direction: column;
@@ -44,6 +73,12 @@ body {
     text-transform: uppercase;
 }
 
+.button:hover {
+    cursor: pointer;
+    background: #80c257;
+    transition: .2s ease-in-out;
+}
+
 span.highlight {
     background: #611c1c;
     padding: 0 20px;
@@ -53,28 +88,72 @@ span.h-small {
     padding: 3px 10px;
 }
 
+.blinking-cursor {
+    color: #2E3D48;
+    animation: 1s blink step-end infinite;
+  }
 
 /* ------------- App ------------- */
+@media (max-width: 1021px) {
+    .main-flex {
+        margin: 0 !important;
+        text-align: center;
+    }
+    .app-container {
+        margin: 6vw;
+    }
+    .app-header h1:after {
+        display: none;
+    }
+    .app-guess-container ul.app-guesses li {
+        font-size: 7vw !important;
+    }
+    .app-input {
+        width: 47vw !important;
+        font-size: 24vw !important;
+    }
+}
+
+@media (min-width: 550px) {
+    .app-input {
+        width: 17vw !important;
+        font-size: 7vw !important;
+    }
+}
+
+@media (max-width: 760px) {
+    .app-footer .logo {
+        width: 150px;
+    }
+    .desktop-author {
+        display: none !important;
+    }
+    .mobile-author {
+        display: block !important;
+    }
+}
+
 .app-container {
     height: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-.app-container .app-header,
-.app-container .app-main {
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .app-container .main-flex {
     display: flex;
     align-items: center;
+
 }
 
 .app-input {
-    height: 20px;
-    width: 200px;
+    width: 19vw;
     text-align: center;
+    font-size: 10vw;
+    color: #fff;
+    background: transparent;
+    border: none;
 }
 
 #guesses {
@@ -83,10 +162,12 @@ span.h-small {
 
 .app-guess-container ul.app-guesses li {
     display: inline-block;
-    font-size: 48px;
-    padding: 0 31px;
+    font-size: 2vw;
     background: #48b1c5;
     border-radius: 3px;
+    width: 51px;
+    text-align: center;
+    margin-right: 0px;
 }
 
 .app-guess-container ul.app-guesses li:nth-child(2) {
@@ -108,8 +189,9 @@ span.h-small {
 
 /* ------------- Headers ------------- */
 .app-header {
-    max-width: 60vw;
     margin-left: 6vw;
+    flex: 2;
+    flex-basis: 627px;
 }
 
 .app-header h1 {
@@ -131,24 +213,30 @@ span.h-small {
     margin-left: 20px;
 }
 
+.app-header h1:before {
+    width: 0px; /* 30% */
+    position: absolute;
+    bottom: -17%;
+    z-index: -1;
+    height: 20px;
+    background: #49b1c5;
+}
+
 .app-header h2 {
     font-family: Barlow;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 92px;
+    font-size: 6.6vw;
     line-height: 1.1;
-    margin: 17px 0;
+    margin: 17px 0 0 0;
 }
 
 
 /* ------------- Main ------------- */
 .app-main {
     margin-right: 6vw;
-}
-
-.game-container {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .input-container {
